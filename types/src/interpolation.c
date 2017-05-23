@@ -33,9 +33,11 @@ typedef struct {
     rage_InterpolationMode mode;
 } rage_FramePoint;
 
+/*
 _Static_assert(
     ATOMIC_POINTER_LOCK_FREE,
     "Atomic pointers not lock free on this platform");
+*/
 
 typedef struct {
     rage_Countdown * c;

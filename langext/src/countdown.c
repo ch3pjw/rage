@@ -9,8 +9,10 @@ struct rage_Countdown {
     sem_t sig;
 };
 
+/*
 _Static_assert(
     ATOMIC_INT_LOCK_FREE, "Atomic int not lock free on this platform");
+*/
 
 rage_Countdown * rage_countdown_new(int initial_value) {
     rage_Countdown * c = malloc(sizeof(rage_Countdown));
